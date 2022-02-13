@@ -12,15 +12,15 @@ export default {
 
 <style scoped>
 .fit-nav-button {
-  height: auto;
+  align-self: stretch;
+  width: 100px;
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  //padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 15px;
+  margin-left: 15px;
 }
 </style>

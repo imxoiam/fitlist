@@ -1,9 +1,11 @@
 <template>
   <div class="fit-nav">
           <fit-nav-button @click="$router.push('/')"> logo</fit-nav-button>
-          <fit-nav-button @click="$router.push('/')"> fit list</fit-nav-button>
-          <fit-nav-button @click="$router.push('/weight')"> weight</fit-nav-button>
-          <fit-nav-button @click="$router.push('/about')"> about</fit-nav-button>
+          <div class="fit-nav-menu">
+            <fit-nav-button @click="$router.push('/')"> fit list</fit-nav-button>
+            <fit-nav-button @click="$router.push('/weight')"> weight</fit-nav-button>
+            <fit-nav-button @click="$router.push('/about')"> about</fit-nav-button>
+          </div>
         
   </div>
 </template>
@@ -16,10 +18,16 @@ export default {
 
 <style scoped>
 .fit-nav {
-  height: 50px;
+  min-height: 50px;
   background-color: aquamarine;
   border: 1px solid greenyellow;
   display: flex;
   align-items: center 
+}
+
+.fit-nav-menu {
+  align-self: stretch;
+  display: flex;
+  margin-left: auto;
 }
 </style>
